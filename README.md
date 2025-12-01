@@ -77,6 +77,21 @@ var result = service.Search("inception");
 
 ---
 
+## Design Principles
+- SOLID
+- Clean controller–service architecture
+- Extensibility
+- Testability
+- Minimal dependencies
+
+---
+
+## Requirements
+- .NET 6 SDK
+- xUnit (or your chosen test framework)
+
+---
+
 ## Running the API
 Build:
 ```bash
@@ -97,17 +112,3 @@ Swagger/OpenAPI is typically available at:
 ```bash
 https://localhost:5001/swagger
 ```
----
-
-## Design Principles
-- SOLID
-- Clean controller–service architecture
-- Extensibility
-- Testability
-- Minimal dependencies
-
----
-
-## Requirements
-- .NET 6 SDK
-- xUnit (or your chosen test framework)
