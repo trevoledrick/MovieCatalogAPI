@@ -10,20 +10,20 @@ It is designed to be lightweight, easy to extend, and ideal as a foundation for 
 
 ## Project Structure
 
-/src  
-/MovieCatalogAPI  
-- Program.cs  
-- Controllers/  
-  - MoviesController.cs  
-- Models/  
-  - Movie.cs  
-- Services/  
-  - IMovieService.cs  
-  - MovieService.cs  
+- /src  
+  - /MovieCatalogAPI  
+    - Program.cs  
+    - Controllers/  
+      - MoviesController.cs  
+    - Models/  
+      - Movie.cs  
+    - Services/  
+      - IMovieService.cs  
+      - MovieService.cs  
 
-/tests  
-/MovieCatalogAPI.Tests  
-- MovieServiceTests.cs  
+- /tests  
+  - /MovieCatalogAPI.Tests  
+    - MovieServiceTests.cs  
 
 ---
 
@@ -100,19 +100,14 @@ https://localhost:5001/swagger
 ---
 
 ## Design Principles
-SOLID
-
-Clean controller–service architecture
-
-Extensibility
-
-Testability
-
-Minimal dependencies
+- SOLID
+- Clean controller–service architecture
+- Extensibility
+- Testability
+- Minimal dependencies
 
 ---
 
 ## Requirements
-.NET 6 SDK
-
-xUnit (or your chosen test framework)
+- .NET 6 SDK
+- xUnit (or your chosen test framework)
