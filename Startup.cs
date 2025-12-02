@@ -1,10 +1,10 @@
 using System;
 using System.IO;
 using System.Reflection;
-using MovieholicAPI.Models;
-using MovieholicAPI.Services.CharacterServices;
-using MovieholicAPI.Services.FranchiseServices;
-using MovieholicAPI.Services.MovieServices;
+using MovieCatalogAPI.Models;
+using MovieCatalogAPI.Services.CharacterServices;
+using MovieCatalogAPI.Services.FranchiseServices;
+using MovieCatalogAPI.Services.MovieServices;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -14,7 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace MovieholicAPI
+namespace MovieCatalogAPI
 {
     public class Startup
     {
@@ -63,7 +63,7 @@ namespace MovieholicAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MovieholicAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MovieCatalogAPI v1"));
             }
 
             app.UseHttpsRedirection();

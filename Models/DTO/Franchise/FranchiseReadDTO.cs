@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MovieholicAPI.Models.DTO.Franchise
+namespace MovieCatalogAPI.Models.DTO.Franchise
 {
     public class FranchiseReadDTO
     {

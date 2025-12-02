@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using MovieholicAPI.Models.Domain;
+using MovieCatalogAPI.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespace MovieholicAPI.Models
+namespace MovieCatalogAPI.Models
 {
     public class MoviesContext : DbContext
     {

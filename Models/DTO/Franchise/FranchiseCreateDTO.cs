@@ -1,4 +1,4 @@
-﻿namespace MovieholicAPI.Models.DTO.Franchise
+﻿namespace MovieCatalogAPI.Models.DTO.Franchise
 {
     public class FranchiseCreateDTO
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MovieholicAPI.Migrations
+namespace MovieCatalogAPI.Migrations
 {
     public partial class DataMigration : Migration
     {

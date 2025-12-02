@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MovieholicAPI.Models.DTO.Movie
+namespace MovieCatalogAPI.Models.DTO.Movie
 {
     public class MovieCharactersReadDTO
     {

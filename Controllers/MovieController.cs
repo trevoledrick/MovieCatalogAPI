@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Net.Mime;
 using System.Threading.Tasks;
-using MovieholicAPI.Models.Domain;
-using MovieholicAPI.Models.DTO.Movie;
-using MovieholicAPI.Services.MovieServices;
+using MovieCatalogAPI.Models.Domain;
+using MovieCatalogAPI.Models.DTO.Movie;
+using MovieCatalogAPI.Services.MovieServices;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MovieholicAPI.Controllers
+namespace MovieCatalogAPI.Controllers
 {
     [Route("api/v1/movies")]
     [ApiController]

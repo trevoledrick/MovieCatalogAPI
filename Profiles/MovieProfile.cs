@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using MovieholicAPI.Models.Domain;
-using MovieholicAPI.Models.DTO.Movie;
+using MovieCatalogAPI.Models.Domain;
+using MovieCatalogAPI.Models.DTO.Movie;
 using AutoMapper;
 
-namespace MovieholicAPI.Profiles
+namespace MovieCatalogAPI.Profiles
 {
     public class MovieProfile : Profile
     {

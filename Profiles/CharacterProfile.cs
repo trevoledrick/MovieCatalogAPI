@@ -1,8 +1,8 @@
-﻿using MovieholicAPI.Models.Domain;
-using MovieholicAPI.Models.DTO.Character;
+﻿using MovieCatalogAPI.Models.Domain;
+using MovieCatalogAPI.Models.DTO.Character;
 using AutoMapper;
 
-namespace MovieholicAPI.Profiles
+namespace MovieCatalogAPI.Profiles
 {
     public class CharacterProfile : Profile
     {

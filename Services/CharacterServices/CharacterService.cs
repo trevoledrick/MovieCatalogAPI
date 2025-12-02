@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MovieholicAPI.Models;
-using MovieholicAPI.Models.Domain;
+using MovieCatalogAPI.Models;
+using MovieCatalogAPI.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespace MovieholicAPI.Services.CharacterServices
+namespace MovieCatalogAPI.Services.CharacterServices
 {
     public class CharacterService : ICharacterService
     {

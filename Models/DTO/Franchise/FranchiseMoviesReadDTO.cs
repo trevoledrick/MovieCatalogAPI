@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace MovieholicAPI.Models.DTO.Franchise
+namespace MovieCatalogAPI.Models.DTO.Franchise
 {
     public class FranchiseMoviesReadDTO
     {

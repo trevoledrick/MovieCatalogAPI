@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MovieholicAPI.Models;
-using MovieholicAPI.Models.Domain;
+using MovieCatalogAPI.Models;
+using MovieCatalogAPI.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespace MovieholicAPI.Services.FranchiseServices
+namespace MovieCatalogAPI.Services.FranchiseServices
 {
     public class FranchiseService : IFranchiseService
     {
@@ -55,19 +55,23 @@ namespace MovieholicAPI.Services.FranchiseServices
         /// <returns></returns>
         public async Task<IEnumerable<Character>> GetAllCharactersFromFranchise(int id)
         {
-            //var franchiseMovies = context.Movies.Include(c =>c.Characters)
-            //.Where(c =>c.FranchiseId == id)
-            //.Select(m=>m.Characters).ToList();
-            var franchiseMovies = context.Movies.Include(c => c.Characters)
-                                                .Where(c => c.FranchiseId == id);
+            var franchiseMovies = await context.Movies
+            .Include(c =>c.Characters)
+            .Where(c =>c.FranchiseId == id)
+            .ToListAsync();
+            // var franchiseMovies = context.Movies.Include(c => c.Characters)
+            //                                     .Where(c => c.FranchiseId == id);
 
             var chararacterList = new List<Character>();
+            var seenIds = new HashSet<int>();
             foreach (var movie in franchiseMovies)
             {
                 foreach (var character in movie.Characters)
                 {
-                    if (!chararacterList.Contains(character))
+                    if (seenIds.Add(character.CharacterId))
+                    {
                         chararacterList.Add(character);
+                    }
                 }
             }
 

@@ -1,4 +1,4 @@
-﻿namespace MovieholicAPI.Models.DTO.Character
+﻿namespace MovieCatalogAPI.Models.DTO.Character
 {
     public class CharacterEditDTO
     {

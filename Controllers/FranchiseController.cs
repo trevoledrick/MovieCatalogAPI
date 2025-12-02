@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Net.Mime;
 using System.Threading.Tasks;
-using MovieholicAPI.Models.Domain;
-using MovieholicAPI.Models.DTO.Character;
-using MovieholicAPI.Models.DTO.Franchise;
-using MovieholicAPI.Services.FranchiseServices;
+using MovieCatalogAPI.Models.Domain;
+using MovieCatalogAPI.Models.DTO.Character;
+using MovieCatalogAPI.Models.DTO.Franchise;
+using MovieCatalogAPI.Services.FranchiseServices;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MovieholicAPI.Controllers
+namespace MovieCatalogAPI.Controllers
 {
     [Route("api/v1/franchises")]
     [ApiController]

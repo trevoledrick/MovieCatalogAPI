@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using MovieholicAPI.Models.Domain;
-using MovieholicAPI.Models.DTO.Franchise;
+using MovieCatalogAPI.Models.Domain;
+using MovieCatalogAPI.Models.DTO.Franchise;
 using AutoMapper;
 
-namespace MovieholicAPI.Profiles
+namespace MovieCatalogAPI.Profiles
 {
     public class FranchiseProfile : Profile
     {

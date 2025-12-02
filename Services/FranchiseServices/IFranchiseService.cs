@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using MovieholicAPI.Models.Domain;
+using MovieCatalogAPI.Models.Domain;
 
-namespace MovieholicAPI.Services.FranchiseServices
+namespace MovieCatalogAPI.Services.FranchiseServices
 {
     public interface IFranchiseService
     {
